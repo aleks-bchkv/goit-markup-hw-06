@@ -42,7 +42,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -608,6 +608,68 @@ background: #404BBF;
   margin-left: 16px;
 }
 
+@media screen and (min-width: 428px){
+  .container {
+    max-width: 428px;
+  }
+  .benefits-icons {
+    display: none;
+  }
+  .benefits-list-item {
+    max-width: 396px;
+    flex-wrap: wrap;
+  }
+  
+}
+
+@media screen and (min-width: 768px){
+  .container {
+    max-width: 768px;
+  }
+
+   .benefits-icons {
+    display: none;
+  }
+
+  .benefits-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+  .benefits-section .list {
+  gap: 24px;
+  flex-wrap: wrap;
+  }
+
+
+  .benefits-list-item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .container {
+    max-width: 1440px;
+  }
+  .benefits-section .list {
+  gap: 72px;
+  }
+  .benefits-icons {
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: block;
+}
+  .benefits-list-item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+}
+
 /* Index page styles */
 
 /* Index page -  Hero Section*/
@@ -684,30 +746,22 @@ background: #404BBF;
 /* Index page -  Benefits Section*/
 
 .benefits-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .benefits-section .list {
   list-style: none;
   display: flex;
-  gap: 24px;
   justify-content: space-between;
 }
 
 .benefits-list-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
+  position: relative;
 }
 
-.benefits-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
 
 .benefits-item-title {
   font-family: "Roboto", sans-serif;
